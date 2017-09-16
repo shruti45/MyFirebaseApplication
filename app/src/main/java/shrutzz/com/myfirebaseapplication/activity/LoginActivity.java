@@ -66,6 +66,7 @@ public class LoginActivity extends AppCompatActivity {
 
         firstTimeAccess=true;
         initFirebase();
+        //shruti
 
     }
 
