@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bubble_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_green"
+            android:minWidth="100dp"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/textname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#888888"
+                android:layout_marginLeft="15dp"
+                android:textSize="10sp"
+                android:layout_alignParentLeft="true"
+                android:text="sfdsf" />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/layoutcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/textname">
+
+                    <TextView
+                        android:id="@+id/textContentUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingLeft="10dp"
+                        android:gravity="center"
+                        android:textSize="14dp"
+                        android:text="nvjsbdv"
+                        android:layout_centerInParent="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000" />
+
+
+                </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#888888"
+                android:textSize="10sp"
+                android:layout_toEndOf="@+id/layoutcontent"
+                android:layout_below="@+id/layoutcontent"
+                android:paddingRight="10dp"
+                android:text="aerewr" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

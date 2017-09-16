@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/loginpage"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:padding="5dp"
+            android:src="@drawable/profileicon"
+            android:gravity="center_horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/name_layout"
+            android:background="@drawable/layout_border_without_border"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/username_img"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/eight_seven" />
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="email"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:layout_toRightOf="@+id/username_img"
+                android:layout_marginLeft="5dp"/>
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_email"
+                android:layout_marginTop="5dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:hint="enter_email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="14dp"
+                android:layout_toRightOf="@+id/username_img"
+                android:layout_marginLeft="5dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/desg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/name_layout"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_border_without_border"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/desg_img"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/two_four" />
+            <TextView
+                android:id="@+id/tv_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="pwd"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:layout_toRightOf="@+id/desg_img"
+                android:layout_marginLeft="5dp"/>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_pass"
+                android:layout_marginTop="5dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:hint="enter_pwd"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="14dp"
+                android:layout_toRightOf="@+id/desg_img"
+                android:layout_marginLeft="5dp" />
+
+            <CheckBox
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/show_hide_pass_drawable"
+                android:button="@android:color/transparent"
+                android:id="@+id/showPasswBtn"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/actmain_singbtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/signin_button_bg">
+            <TextView
+                android:id="@+id/sign_in_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sign_in"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/signup_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="2dp"
+            android:layout_marginTop="40dp"
+            android:text="sign_up"
+            android:textColor="#000000"
+            android:textAllCaps="true"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+</LinearLayout>
